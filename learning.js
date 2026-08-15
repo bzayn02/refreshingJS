@@ -187,15 +187,48 @@
 // };
 // user.greet();
 
-class Timer {
-   constructor() {
-      this.seconds = 0;
-   }
+// class Timer {
+//    constructor() {
+//       this.seconds = 0;
+//    }
 
-   start() {
-      setInterval(() => {
-         this.seconds++;
-         console.log(this.seconds);
-      }, 1000);
-   }
-}
+//    start() {
+//       setInterval(() => {
+//          this.seconds++;
+//          console.log(this.seconds);
+//       }, 1000);
+//    }
+// }
+
+// const timer = {
+//    seconds: 0,
+//    start: function () {
+//       setInterval(() => {
+//          this.seconds++;
+//          console.log(this.seconds);
+//       }, 1000);
+//    },
+// };
+
+// timer.start();
+
+// const timer = {
+//    seconds: 0,
+//    start: function () {
+//       setInterval(function () {
+//          this.seconds++;
+//          console.log(this.seconds);
+//       }, 1000);
+//    },
+// };
+
+// timer.start();
+
+// const user = {
+//    name: 'Alice',
+//    greet: () => {
+//       console.log("Hi, I'm " + this.name);
+//    },
+// };
+
+// user.greet();
