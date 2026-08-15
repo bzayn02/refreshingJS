@@ -232,3 +232,38 @@
 // };
 
 // user.greet();
+
+// call
+// function introduce(greeting) {
+//    console.log(greeting + ", I'm " + this.name);
+// }
+
+// const person1 = {
+//    name: 'Hari',
+// };
+
+// const person2 = {
+//    name: 'Shyam',
+// };
+
+// introduce.call(person1, 'Hello');
+// introduce.call(person2, 'Hey');
+
+// // apply
+// function introduce(greeting, punctuation) {
+//    console.log(greeting + ", I'm " + this.name + punctuation);
+// }
+
+// const person1 = { name: 'Sam' };
+
+// introduce.apply(person1, ['Hello', '!']);
+
+// function introduce(greeting) {
+//    console.log(greeting + ", I'm " + this.name);
+// }
+// const person1 = { name: 'Sam' };
+
+// const boundIntroduce = introduce.bind(person1);
+
+// boundIntroduce('Hello');
+// boundIntroduce('Hi there!');
