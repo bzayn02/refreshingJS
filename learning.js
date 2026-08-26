@@ -267,3 +267,48 @@
 
 // boundIntroduce('Hello');
 // boundIntroduce('Hi there!');
+
+// const animal = {
+//    eats: true,
+// };
+
+// const rabbit = Object.create(animal);
+
+// rabbit.eats = false;
+
+// console.log(rabbit.eats);
+// console.log(animal.eats);
+
+// const vehiclePrototype = {
+//    describe: function () {
+//       console.log(`This is a ${this.type} with ${this.wheels} wheels.`);
+//    },
+// };
+
+// function createVehicle(type, wheels) {
+//    const vehicle = Object.create(vehiclePrototype);
+//    vehicle.type = type;
+//    vehicle.wheels = wheels;
+//    return vehicle;
+// }
+
+// const car = createVehicle('car', 4);
+// const motorcycle = createVehicle('motorcycle', 2);
+
+// car.describe = function () {
+//    console.log('Custom!');
+// };
+
+// car.describe();
+// motorcycle.describe();
+
+// console.log(y);
+// let y = 'Hello';
+
+// const obj = { val: 5, show: () => console.log(this.val) };
+// obj.show();
+
+// const a = { greet: 'hi' };
+// const b = Object.create(a);
+// b.greet = 'hello';
+// console.log(a.greet);
