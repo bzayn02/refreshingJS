@@ -426,9 +426,43 @@
 
 // console.log(test());
 
-let user = { name: 'Alice' };
-let user2 = user;
+// let user = { name: 'Alice' };
+// let user2 = user;
 
-user = null;
+// user = null;
 
-console.log(user2.name);
+// console.log(user2.name);
+
+//MUTATING (changes the original
+// push, pop, shift, unshift, splice, sort, reverse)
+
+// NON MUTAING (creates a new one
+// map, filter, slice, concat, spreat(...), Object.assign)
+
+// const original = [1, 2, 3];
+// const copy = original;
+
+// copy.push(4);
+
+// console.log(original);
+// console.log(copy);
+
+// const original = [1, 2, 3];
+// const copy = [...original];
+
+// copy.push(4);
+
+// console.log(original);
+// console.log(copy);
+// const user = { name: 'Alice', age: 25, city: 'NYC' };
+// const updates = { age: 26 };
+
+// function updateUserProfile(user, updates) {
+//    const updatedUser = { ...user, ...updates };
+//    return updatedUser;
+// }
+
+// const updated = updateUserProfile(user, updates);
+
+// console.log(user);
+// console.log(updated);
