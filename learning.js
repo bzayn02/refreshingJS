@@ -415,13 +415,20 @@
 // riskyDivide(10, 2);
 // riskyDivide(10, 0);
 
-function test() {
-   try {
-      return 'from try';
-   } finally {
-      console.log('finally ran');
-      return 'from finally';
-   }
-}
+// function test() {
+//    try {
+//       return 'from try';
+//    } finally {
+//       console.log('finally ran');
+//       return 'from finally';
+//    }
+// }
 
-console.log(test());
+// console.log(test());
+
+let user = { name: 'Alice' };
+let user2 = user;
+
+user = null;
+
+console.log(user2.name);
