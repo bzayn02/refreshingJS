@@ -312,3 +312,78 @@
 // const b = Object.create(a);
 // b.greet = 'hello';
 // console.log(a.greet);
+
+// class Vehicle {
+//    constructor(type, wheels) {
+//       this.type = type;
+//       this.wheels = wheels;
+//    }
+//    describe() {
+//       console.log(`This is a ${this.type} with ${this.wheels} wheels.`);
+//    }
+// }
+
+// const car = new Vehicle('car', 4);
+// const motorcycle = new Vehicle('motorcycle', 2);
+
+// car.describe();
+// motorcycle.describe();
+
+// console.log(car.describe === motorcycle.describe);
+
+// class Vehicle {
+//    constructor(type, wheels) {
+//       this.type = type;
+//       this.wheels = wheels;
+//    }
+
+//    describe() {
+//       console.log(`This is a ${this.type} with ${this.wheels} wheels`);
+//    }
+// }
+
+// class Car extends Vehicle {
+//    constructor(brand) {
+//       super('car', 4);
+//       this.brand = brand;
+//    }
+//    honk() {
+//       console.log(`${this.brand} says honk honk!`);
+//    }
+// }
+
+// const myCar = new Car('Toyota');
+// // myCar.describe();
+// const detachedDescribe = myCar.describe;
+// myCar.honk();
+// detachedDescribe();
+
+// TypeError: Cannot read property 'type' of undefined
+//     at describe (/Users/bzay_n02/Desktop/SelfLearning Folder/Self Learning/learning.js:341:37)
+//     at Object.<anonymous> (/Users/bzay_n02/Desktop/SelfLearning Folder/Self Learning/learning.js:359:1)
+
+// class OperatingSystem {
+//    constructor(OS, RAM) {
+//       this.OS = OS;
+//       this.RAM = RAM;
+//       console.log('New OS created!');
+//    }
+//    describe() {
+//       console.log(`This is a ${this.OS} processor with ${this.RAM} gb of RAM.`);
+//    }
+// }
+
+// class Mac extends OperatingSystem {
+//    constructor(brand) {
+//       super('M5', 24);
+//       this.brand = brand;
+//    }
+//    yell() {
+//       console.log(`This is a ${this.brand} which is super fast.`);
+//    }
+// }
+
+// const myMac = new Mac('Macbook');
+
+// myMac.describe();
+// myMac.yell();
