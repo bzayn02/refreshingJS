@@ -387,3 +387,41 @@
 
 // myMac.describe();
 // myMac.yell();
+
+// console.log('Start');
+
+// try {
+//    console.log('Inside try');
+//    null.someProperty;
+//    console.log('This line after crash.');
+// } catch (error) {
+//    console.log('Caught an error!');
+// }
+// console.log('End');
+
+// function riskyDivide(a, b) {
+//    try {
+//       if (b === 0) {
+//          throw new Error('Cannot divide by 0!');
+//       }
+//       console.log(a / b);
+//    } catch (error) {
+//       console.log('Error caught: ' + error.message);
+//    } finally {
+//       console.log('Division attempt finished');
+//    }
+// }
+
+// riskyDivide(10, 2);
+// riskyDivide(10, 0);
+
+function test() {
+   try {
+      return 'from try';
+   } finally {
+      console.log('finally ran');
+      return 'from finally';
+   }
+}
+
+console.log(test());
