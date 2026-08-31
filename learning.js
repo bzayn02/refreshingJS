@@ -466,3 +466,10 @@
 
 // console.log(user);
 // console.log(updated);
+
+let count = 0;
+
+export function increment() {
+   count++;
+   return count;
+}

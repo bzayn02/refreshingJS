@@ -1,0 +1,21 @@
+{
+   "name": "self-learning",
+   "type": "module",
+   "version": "1.0.0",
+   "description": "",
+   "main": "learning.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bzayn02/refreshingJS.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/bzayn02/refreshingJS/issues"
+   },
+   "homepage": "https://github.com/bzayn02/refreshingJS#readme"
+}
