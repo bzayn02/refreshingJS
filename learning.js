@@ -467,9 +467,44 @@
 // console.log(user);
 // console.log(updated);
 
-let count = 0;
+// let count = 0;
 
-export function increment() {
-   count++;
-   return count;
-}
+// export function increment() {
+//    count++;
+//    return count;
+// }
+
+// console.log('Order placed');
+
+// setTimeout(() => {
+//    console.log('Food ready! (buzzer went off!)');
+// }, 5000);
+
+// console.log('Sitting down, chatting with friends.');
+
+// const orderFood = new Promise((resolve, reject) => {
+//    const success = true;
+
+//    setTimeout(() => {
+//       if (success) {
+//          resolve('Your food is ready!');
+//       } else {
+//          reject('Kitchen ran out of ingredients!');
+//       }
+//    }, 2000);
+// });
+
+// orderFood
+//    .then((result) => console.log('Success: ', result))
+//    .catch((error) => console.log('Failed:', error));
+
+// console.log('Start');
+
+// const promise = new Promise((resolve, reject) => {
+//    console.log('Inside promise executor');
+//    resolve('Done!');
+// });
+
+// promise.then((result) => console.log('Result: ', result));
+
+// console.log('End');
