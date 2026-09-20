@@ -508,3 +508,116 @@
 // promise.then((result) => console.log('Result: ', result));
 
 // console.log('End');
+
+// function delay(ms) {
+//    return new Promise((resolve) =>
+//       setTimeout(() => resolve('done waiting'), ms),
+//    );
+// }
+
+// async function run() {
+//    console.log('A');
+//    const result = await delay(1000);
+//    console.log('B', result);
+//    console.log('C');
+// }
+
+// run();
+// console.log('D');
+
+// async function getUserData(username) {
+//    try {
+//       const result = await loginUser(username);
+
+//       const profile = await fetchProfile(result.id);
+
+//       const orders = await fetchOrders(profile.profileId);
+
+//       return orders;
+//    } catch (error) {
+//       console.log(error);
+//    }
+// }
+
+// // getUserData('Alice').then((orders) => console.log(orders));
+
+// async function main() {
+//    const getOrders = await getUserData('Alice');
+//    console.log(getOrders);
+// }
+
+// main();
+
+// function loginUser(username) {
+//    return new Promise((resolve) => {
+//       setTimeout(() => resolve({ id: 1, username }), 500);
+//    });
+// }
+
+// function fetchProfile(userId) {
+//    return new Promise((resolve) => {
+//       setTimeout(() => resolve({ profileId: 101, bio: 'Hi there!' }, 500));
+//    });
+// }
+
+// function fetchOrders(profileId) {
+//    return new Promise((resolve) => {
+//       setTimeout(() => resolve(['Order #1', 'Order #2'], 500));
+//    });
+// }
+
+// async function getUserData(username) {
+//    try {
+//       const result = await loginUser(username);
+//       const profile = await fetchProfile(result.id);
+//       const orders = await fetchOrders(profile.profileId);
+//       return orders;
+//    } catch (error) {
+//       console.log(error);
+//    }
+// }
+
+// // async function main() {
+// //    const getOrders = await getUserData('Alice');
+// //    console.log(getOrders);
+// // }
+
+// // main();
+
+// getUserData('Alice').then((getOrders) => {
+//    console.log(getOrders);
+// });
+
+// let someArray;
+// someArray.map((banana) => banana * 2);
+
+function task(name, ms) {
+   return new Promise((resolve) => {
+      setTimeout(() => {
+         console.log(`${name} done`);
+         resolve(name);
+      }, ms);
+   });
+}
+
+async function sequential() {
+   console.time('sequential');
+   await task('A', 1000);
+   await task('B', 1000);
+   await task('C', 1000);
+   console.timeEnd('sequential');
+}
+
+async function parallel() {
+   console.time('parallel');
+   await Promise.all([task('A', 1000), task('B', 1000), task('C', 1000)]);
+   console.timeEnd('parallel');
+}
+
+Promise.all([task('A', 1000), Promise.reject('B failed!'), task('C', 3000)])
+   .then((results) => console.log(results))
+   .catch((error) => console.log('Caught:', error));
+
+parallel();
+
+sequential();
