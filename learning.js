@@ -591,33 +591,72 @@
 // let someArray;
 // someArray.map((banana) => banana * 2);
 
-function task(name, ms) {
-   return new Promise((resolve) => {
-      setTimeout(() => {
-         console.log(`${name} done`);
-         resolve(name);
-      }, ms);
-   });
-}
+// function task(name, ms) {
+//    return new Promise((resolve) => {
+//       setTimeout(() => {
+//          console.log(`${name} done`);
+//          resolve(name);
+//       }, ms);
+//    });
+// }
 
-async function sequential() {
-   console.time('sequential');
-   await task('A', 1000);
-   await task('B', 1000);
-   await task('C', 1000);
-   console.timeEnd('sequential');
-}
+// async function sequential() {
+//    console.time('sequential');
+//    await task('A', 1000);
+//    await task('B', 1000);
+//    await task('C', 1000);
+//    console.timeEnd('sequential');
+// }
 
-async function parallel() {
-   console.time('parallel');
-   await Promise.all([task('A', 1000), task('B', 1000), task('C', 1000)]);
-   console.timeEnd('parallel');
-}
+// async function parallel() {
+//    console.time('parallel');
+//    await Promise.all([task('A', 1000), task('B', 1000), task('C', 1000)]);
+//    console.timeEnd('parallel');
+// }
 
-Promise.all([task('A', 1000), Promise.reject('B failed!'), task('C', 3000)])
-   .then((results) => console.log(results))
-   .catch((error) => console.log('Caught:', error));
+// Promise.all([task('A', 1000), Promise.reject('B failed!'), task('C', 3000)])
+//    .then((results) => console.log(results))
+//    .catch((error) => console.log('Caught:', error));
 
-parallel();
+// parallel();
 
-sequential();
+// sequential();
+
+// async function getPostWithComments(postId) {
+//    try {
+//       const response1 = await fetch(
+//          `https://jsonplaceholder.typicode.com/posts/${postId}`,
+//       );
+//       const post = await response1.json();
+//       const response2 = await fetch(
+//          `https://jsonplaceholder.typicode.com/posts/${postId}/comments`,
+//       );
+//       const comments = await response2.json();
+//       console.log({ post, comments });
+//    } catch (error) {
+//       console.log(error);
+//    }
+// }
+
+// getPostWithComments(1);
+
+// async function getPostWithComments(postId) {
+//    try {
+//       const fetch1 = fetch(
+//          `https://jsonplaceholder.typicode.com/posts/${postId}`,
+//       );
+//       const fetch2 = fetch(
+//          `https://jsonplaceholder.typicode.com/posts/${postId}/comments`,
+//       );
+//       const [response1, response2] = await Promise.all([fetch1, fetch2]);
+//       const [post, comments] = await Promise.all([
+//          response1.json(),
+//          response2.json(),
+//       ]);
+//       console.log({ post, comments });
+//    } catch (error) {
+//       console.log(error);
+//    }
+// }
+
+// getPostWithComments(10);
