@@ -660,3 +660,20 @@
 // }
 
 // getPostWithComments(10);
+
+// function* countUp() {
+//    console.log('Starting');
+//    yield 1;
+//    console.log('Resumed after first yield');
+//    yield 2;
+//    console.log('Finished');
+// }
+
+// const gen = countUp();
+
+// console.log('Before first next()');
+// console.log(gen.next());
+// console.log('Before second next()');
+// console.log(gen.next());
+// console.log('Before third next()');
+// console.log(gen.next());
