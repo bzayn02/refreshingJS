@@ -677,3 +677,43 @@
 // console.log(gen.next());
 // console.log('Before third next()');
 // console.log(gen.next());
+
+// function findMax(arr) {
+//    let max = arr[0];
+//    for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] > max) {
+//          max = arr[i];
+//       }
+//    }
+//    console.log(max);
+// }
+
+// findMax([5, 1, 2, 3, 4]);
+
+// Time Complexity O(n) & Space Complexity O(1)
+
+// function hasDuplicates(arr) {
+//    for (let i = 0; i < arr.length; i++) {
+//       for (let j = 0; j < arr.length; j++) {
+//          if (i !== j && arr[i] === arr[j]) {
+//             return true;
+//          }
+//       }
+//    }
+//    return false;
+// }
+
+// hasDuplicates([1, 2, 2, 3, 4]);
+
+// function hasDuplicateFast(arr) {
+//    const seen = new Set();
+//    for (let i = 0; i < arr.length; i++) {
+//       if (seen.has(arr[i])) {
+//          return true;
+//       }
+//       seen.add(arr[i]);
+//    }
+
+//    return false;
+// }
+// hasDuplicateFast([1, 2, 2, 3, 5]);
