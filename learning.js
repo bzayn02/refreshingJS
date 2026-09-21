@@ -718,21 +718,38 @@
 // }
 // hasDuplicateFast([1, 2, 2, 3, 5]);
 
-function twoSumSorted(arr, target) {
-   let left = 0;
-   let right = arr.length - 1;
-   while (left < right) {
-      const sum = arr[left] + arr[right];
-      if (sum === target) {
-         return [left, right];
-      } else if (sum < target) {
-         left++;
-      } else {
-         right--;
-      }
-   }
-   return null;
-}
-twoSumSorted([2, 7, 11, 15], 9);
-
+// function twoSumSorted(arr, target) {
+//    let left = 0;
+//    let right = arr.length - 1;
+//    while (left < right) {
+//       const sum = arr[left] + arr[right];
+//       if (sum === target) {
+//          return [left, right];
+//       } else if (sum < target) {
+//          left++;
+//       } else {
+//          right--;
+//       }
+//    }
+//    return null;
+// }
+// console.log(twoSumSorted([2, 7, 11, 15], 9));
 // sortedness required
+//Time Complexity O(n) & Space Complexity O(1)
+
+//Max Sum Subarray
+// function maxSumSubarray(arr, k) {
+//    let windowSum = 0;
+//    for (let i = 0; i < k; i++) {
+//       windowSum += arr[i];
+//    }
+
+//    let maxSum = windowSum;
+//    for (let i = k; i < arr.length; i++) {
+//       windowSum = windowSum - arr[i - k] + arr[i];
+//       maxSum = Math.max(maxSum, windowSum);
+//    }
+//    return maxSum;
+// }
+// console.log(maxSumSubarray([2, 1, 5, 1, 3, 2], 3));
+// //Time Complexity O(n) & Space Complexity O(1)
