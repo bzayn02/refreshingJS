@@ -753,3 +753,46 @@
 // }
 // console.log(maxSumSubarray([2, 1, 5, 1, 3, 2], 3));
 // //Time Complexity O(n) & Space Complexity O(1)
+
+// Hash Map
+// const map = new Map();
+
+// map.set('apple', 3);
+// map.set('banana', 5);
+// console.log(map.get('apple'));
+
+// function twoSumUnsorted(arr, target) {
+//    const seen = new Map();
+
+//    for (let i = 0; i < arr.length; i++) {
+//       const complement = target - arr[i];
+
+//       if (seen.has(complement)) {
+//          return [seen.get(complement), i];
+//       }
+//       seen.set(arr[i], i);
+//    }
+//    return null;
+// }
+
+// console.log(twoSumUnsorted([2, 7, 11, 15], 9));
+
+// function factorial(n) {
+//    if (n === 0) {
+//       return 1;
+//    }
+//    return n * factorial(n - 1);
+// }
+// console.log(factorial(4));
+
+// function factorial(n) {
+//    if (n < 0) {
+//       throw new Error('factorial is not defined for negative numbers.');
+//    }
+//    if (n === 0) {
+//       return 1;
+//    }
+//    return n * factorial(n - 1);
+// }
+
+// console.log(factorial(-7));
