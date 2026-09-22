@@ -814,3 +814,20 @@
 // }
 
 // console.log(subsets([1, 2]));
+
+// const stack = [];
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// console.log(stack.pop());
+// console.log(stack.pop());
+// console.log(stack.pop());
+// console.log(stack);
+
+// const queue = [];
+// queue.push('A');
+// queue.push('B');
+// queue.push('C');
+// console.log(queue.shift());
+// console.log(queue.shift());
+// console.log(queue);
