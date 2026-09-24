@@ -831,3 +831,43 @@
 // console.log(queue.shift());
 // console.log(queue.shift());
 // console.log(queue);
+
+// class Node {
+//    constructor(value) {
+//       this.value = value;
+//       this.next = null;
+//    }
+// }
+
+// const first = new Node(1);
+// const second = new Node(2);
+// const third = new Node(3);
+
+// const firstNode = new Node(0);
+
+// first.next = second;
+// second.next = third;
+// firstNode.next = first;
+
+// console.log(first.next.next.value);
+// console.log(firstNode.value);
+
+class Node {
+   constructor(value) {
+      this.value = value;
+      this.next = null;
+   }
+}
+
+const first = new Node(1);
+const second = new Node(2);
+const third = new Node(3);
+const zero = new Node(0);
+
+first.next = second;
+second.next = third;
+zero.next = first;
+
+console.log(first.next.next.value);
+console.log(first.value);
+console.log(zero.value);
