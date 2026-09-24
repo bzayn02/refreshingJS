@@ -852,22 +852,48 @@
 // console.log(first.next.next.value);
 // console.log(firstNode.value);
 
-class Node {
-   constructor(value) {
-      this.value = value;
-      this.next = null;
-   }
-}
+// class Node {
+//    constructor(value) {
+//       this.value = value;
+//       this.next = null;
+//    }
+// }
 
-const first = new Node(1);
-const second = new Node(2);
-const third = new Node(3);
-const zero = new Node(0);
+// const first = new Node(1);
+// const second = new Node(2);
+// const third = new Node(3);
+// const zero = new Node(0);
 
-first.next = second;
-second.next = third;
-zero.next = first;
+// first.next = second;
+// second.next = third;
+// zero.next = first;
 
-console.log(first.next.next.value);
-console.log(first.value);
-console.log(zero.value);
+// console.log(first.next.next.value);
+// console.log(first.value);
+// console.log(zero.value);
+
+// Trees
+// class TreeNode {
+//    constructor(value) {
+//       this.value = value;
+//       this.left = null;
+//       this.right = null;
+//    }
+// }
+
+// const root = new TreeNode(1);
+// root.left = new TreeNode(2);
+// root.right = new TreeNode(3);
+// root.left.left = new TreeNode(4);
+// root.left.right = new TreeNode(5);
+
+// function preOrder(node) {
+//    if (node === null) {
+//       return;
+//    }
+//    console.log(node.value);
+//    preOrder(node.left);
+//    preOrder(node.right);
+// }
+
+// preOrder(root);
