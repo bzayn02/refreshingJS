@@ -940,12 +940,13 @@
 // console.log(itemsArray);
 // itemsArray.map((item) => console.log(item.textContent.toUpperCase()));
 
-console.log('Start');
+// console.log('Start');
+// let count = 0;
+// const button = document.querySelector('button');
+// const displayNum = document.getElementById('display');
 
-const button = document.querySelector('button');
-
-button.addEventListener('click', function () {
-   console.log('Clicked!');
-});
-
-console.log('End');
+// button.addEventListener('click', function () {
+//    count = count + 1;
+//    displayNum.textContent = `Clicked ${count} times`;
+// });
+// // console.log('End');
