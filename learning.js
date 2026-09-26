@@ -1015,3 +1015,19 @@
 //    localStorage.setItem('count', count);
 //    display.textContent = `Clicked ${count} times`;
 // });
+
+// for (let i = 1; i < 1000; i++) {
+//    const li = document.createElement('li');
+//    li.textContent = `Item ${i}`;
+//    document.getElementById('list').appendChild(li);
+// }
+
+const fragment = document.createDocumentFragment();
+
+for (let i = 1; i < 1000; i++) {
+   const li = document.createElement('li');
+   li.textContent = `Item ${i}`;
+   fragment.appendChild(li);
+}
+
+document.getElementById('list').appendChild(fragment);
