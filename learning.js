@@ -897,3 +897,24 @@
 // }
 
 // preOrder(root);
+
+// Adjacency List — most common: each node lists its direct connections
+const graph = {
+   A: ['B', 'D'],
+   B: ['A', 'C'],
+   C: ['B', 'D'],
+   D: ['A', 'C'],
+};
+function dfs(graph, start, visited = new Set()) {
+   if (visited.has(start)) {
+      return;
+   }
+   visited.add(start);
+   console.log(start);
+
+   for (const neighbor of graph[start]) {
+      dfs(graph, neighbor, visited);
+   }
+}
+
+dfs(graph, 'A');
