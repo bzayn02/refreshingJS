@@ -957,14 +957,61 @@
 //    console.log(event.target.value);
 // });
 
-const form = document.getElementById('myForm');
-const nameInput = document.getElementById('nameInput');
+// const form = document.getElementById('myForm');
+// const nameInput = document.getElementById('nameInput');
 
-form.addEventListener('submit', function (e) {
-   e.preventDefault();
-   if (nameInput.value.trim() === '') {
-      return alert('Enter first.');
-   }
-   console.log('Form Submitted, page did NOT reload');
-   console.log(`You entered: ${nameInput.value}`);
-});
+// form.addEventListener('submit', function (e) {
+//    e.preventDefault();
+//    if (nameInput.value.trim() === '') {
+//       return alert('Enter first.');
+//    }
+//    console.log('Form Submitted, page did NOT reload');
+//    console.log(`You entered: ${nameInput.value}`);
+// });
+
+// localStorage.setItem('username', 'Bijay');
+// localStorage.getItem('username');
+// localStorage.removeItem('username');
+
+// const user = { name: 'Bijay', score: 42 };
+
+// localStorage.setItem('user', JSON.stringify(user));
+
+// const stored = localStorage.getItem('user');
+
+// const parsedUser = JSON.parse(stored);
+
+// let count = 0;
+
+// const button = document.querySelector('button');
+// const display = document.getElementById('display');
+
+// const num = localStorage.getItem('count');
+// if (num) {
+//    count = parseInt(num);
+//    display.textContent = `Clicked ${count} times`;
+// }
+
+// button.addEventListener('click', function () {
+//    count = count + 1;
+//    localStorage.setItem('count', JSON.stringify(count));
+//    display.textContent = `Clicked ${count} times`;
+// });
+
+// let count = 0;
+
+// const button = document.querySelector('button');
+// const display = document.getElementById('display');
+
+// const num = localStorage.getItem('count');
+
+// if (num) {
+//    count = parseInt(num);
+//    display.textContent = `Clicked ${count} times`;
+// }
+
+// button.addEventListener('click', function () {
+//    count = count + 1;
+//    localStorage.setItem('count', count);
+//    display.textContent = `Clicked ${count} times`;
+// });
