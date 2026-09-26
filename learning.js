@@ -899,22 +899,43 @@
 // preOrder(root);
 
 // Adjacency List — most common: each node lists its direct connections
-const graph = {
-   A: ['B', 'D'],
-   B: ['A', 'C'],
-   C: ['B', 'D'],
-   D: ['A', 'C'],
-};
-function dfs(graph, start, visited = new Set()) {
-   if (visited.has(start)) {
-      return;
-   }
-   visited.add(start);
-   console.log(start);
+// const graph = {
+//    A: ['B', 'D'],
+//    B: ['A', 'C'],
+//    C: ['B', 'D'],
+//    D: ['A', 'C'],
+// };
+// function dfs(graph, start, visited = new Set()) {
+//    if (visited.has(start)) {
+//       return;
+//    }
+//    visited.add(start);
+//    console.log(start);
 
-   for (const neighbor of graph[start]) {
-      dfs(graph, neighbor, visited);
-   }
-}
+//    for (const neighbor of graph[start]) {
+//       dfs(graph, neighbor, visited);
+//    }
+// }
 
-dfs(graph, 'A');
+// dfs(graph, 'A');
+
+// console.log(document.body);
+// console.log(document.body.children);
+// console.log(document.body.children[0]);
+// console.log(document.body.children[0].children[0]);
+
+// console.log(document.getElementById('container'));
+// console.log(document.querySelector('.title'));
+// console.log(document.querySelectorAll('.title'));
+
+// const items = document.querySelectorAll('.title');
+// console.log(items.length);
+// console.log(items[0]);
+
+// items.forEach((item) => {
+//    console.log(item.textContent);
+// });
+
+const itemsArray = [...document.querySelectorAll('.title')];
+console.log(itemsArray);
+itemsArray.map((item) => console.log(item.textContent.toUpperCase()));
