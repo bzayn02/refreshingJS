@@ -1022,12 +1022,12 @@
 //    document.getElementById('list').appendChild(li);
 // }
 
-const fragment = document.createDocumentFragment();
+// const fragment = document.createDocumentFragment();
 
-for (let i = 1; i < 1000; i++) {
-   const li = document.createElement('li');
-   li.textContent = `Item ${i}`;
-   fragment.appendChild(li);
-}
+// for (let i = 1; i < 1000; i++) {
+//    const li = document.createElement('li');
+//    li.textContent = `Item ${i}`;
+//    fragment.appendChild(li);
+// }
 
-document.getElementById('list').appendChild(fragment);
+// document.getElementById('list').appendChild(fragment);
