@@ -950,3 +950,21 @@
 //    displayNum.textContent = `Clicked ${count} times`;
 // });
 // // console.log('End');
+
+// const input = document.querySelector('input');
+
+// input.addEventListener('input', function (event) {
+//    console.log(event.target.value);
+// });
+
+const form = document.getElementById('myForm');
+const nameInput = document.getElementById('nameInput');
+
+form.addEventListener('submit', function (e) {
+   e.preventDefault();
+   if (nameInput.value.trim() === '') {
+      return alert('Enter first.');
+   }
+   console.log('Form Submitted, page did NOT reload');
+   console.log(`You entered: ${nameInput.value}`);
+});
