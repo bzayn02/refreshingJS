@@ -936,6 +936,16 @@
 //    console.log(item.textContent);
 // });
 
-const itemsArray = [...document.querySelectorAll('.title')];
-console.log(itemsArray);
-itemsArray.map((item) => console.log(item.textContent.toUpperCase()));
+// const itemsArray = [...document.querySelectorAll('.title')];
+// console.log(itemsArray);
+// itemsArray.map((item) => console.log(item.textContent.toUpperCase()));
+
+console.log('Start');
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', function () {
+   console.log('Clicked!');
+});
+
+console.log('End');
